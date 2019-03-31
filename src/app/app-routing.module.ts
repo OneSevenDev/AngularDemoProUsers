@@ -5,6 +5,7 @@ import { PageNoFoundComponent } from './shared/page-no-found/page-no-found.compo
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'usuario', loadChildren: './pages/usuario/usuario.module#UsuarioModule' },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNoFoundComponent }
 ];
