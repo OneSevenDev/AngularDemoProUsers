@@ -9,6 +9,7 @@ import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { PageNoFoundComponent } from './shared/page-no-found/page-no-found.component';
 import { HomeComponent } from './shared/home/home.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
