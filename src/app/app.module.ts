@@ -10,6 +10,8 @@ import { PageNoFoundComponent } from './shared/page-no-found/page-no-found.compo
 import { HomeComponent } from './shared/home/home.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { InicioSessionComponent } from './shared/inicio-session/inicio-session.component';
+import { PagesComponent } from './pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     SidebarComponent,
     BreadcrumbComponent,
     PageNoFoundComponent,
-    HomeComponent
+    HomeComponent,
+    InicioSessionComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
