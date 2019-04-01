@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Listar Articulos</h4>
+          <h6 class="card-subtitle">
+            <button class="btn btn-primary" (click)="nuevo()">Nuevo Aritculo</button>
+          </h6>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Nombres</th>
+                  <th>Precio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of articulos">
+                  <td>{{item.codigo}}</td>
+                  <td>{{item.nombre}}</td>
+                  <td>{{item.precio}}</td>
+                  <td>
+                    <button class="btn btn-primary" (click)="editar(item)" title="Editar usuario">
+                      <i class="fa fa-save"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

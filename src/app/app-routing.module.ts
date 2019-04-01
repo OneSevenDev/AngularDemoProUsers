@@ -11,6 +11,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'usuario', loadChildren: './pages/usuario/usuario.module#UsuarioModule' },
+      { path: 'articulo', loadChildren: './pages/articulo/articulo.module#ArticuloModule' },
     ]
   },
   { path: 'login', component: InicioSessionComponent },
