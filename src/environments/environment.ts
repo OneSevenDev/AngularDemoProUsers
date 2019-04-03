@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlBackend: 'http://localhost:52980/api/'
+  urlBackend: 'http://localhost:52980/api/',
+  urlSignalR: 'http://localhost:52980/'
 };
 
 /*

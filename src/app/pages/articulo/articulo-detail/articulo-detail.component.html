@@ -1,3 +1,29 @@
-<p>
-  articulo-detail works!
-</p>
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{title}}</h4>
+        <form class="form-control-line m-t-40" (ngSubmit)="grabarNg(forma)" #forma="ngForm">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control form-control-line" name="nombre" [(ngModel)]="articuloSelected.nombre">
+          </div>
+          <div class="form-group">
+            <label>Precio</label>
+            <input type="text" class="form-control form-control-line" name="precio" [(ngModel)]="articuloSelected.precio">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+            <button type="button" class="btn btn-inverse" (click)="regresar()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->

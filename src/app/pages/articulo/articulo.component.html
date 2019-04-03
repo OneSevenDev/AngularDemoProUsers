@@ -1,3 +1,4 @@
 <div>
-  <app-articulo-list></app-articulo-list>
+  <app-articulo-list *ngIf="currentPage == 3" (changePage)="changePage($event)"></app-articulo-list>
+  <app-articulo-detail *ngIf="currentPage == 1 || currentPage == 2" (changePage)="changePage($event)" [articuloSelected]="articuloSelected"></app-articulo-detail>
 </div>
