@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  urlBackend: 'http://localhost:52980/api/',
+  urlSignalR: 'http://localhost:52980/'
 };
