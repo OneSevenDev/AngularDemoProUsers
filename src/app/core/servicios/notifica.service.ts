@@ -43,4 +43,13 @@ export class NotificaService {
 
     return this.http.post(environment.urlBackend + 'notifica/insertar', sendData, { headers: header });
   }
+
+  deleteArticulosRealTime(idarticulo: number): Observable<any> {
+    const sendData = JSON.stringify(idarticulo);
+
+    let header = new HttpHeaders();
+    header = header.set('Content-Type', 'application/json');
+
+    return this.http.post(environment.urlBackend + 'notifica/delete', sendData, { headers: header });
+  }
 }

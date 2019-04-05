@@ -56,6 +56,14 @@ export class ArticuloListComponent implements OnInit {
     });
   }
 
+  remove(item: Articulo) {
+    this.notificaRealTime.deleteArticulosRealTime(item.codigo).subscribe(req => {
+      console.log(req ? 'Borrado exitoso' : 'No se pudo eliminar');
+    }, err => {
+      console.log(err);
+    });
+  }
+
   returnModel(model: ArticuloDataModel) {
     this.changePage.emit(model);
   }
